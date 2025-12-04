@@ -12,9 +12,9 @@ export default function Home() {
         fontFamily: "Arial, sans-serif",
       }}
     >
-      {/* Background Image */}
+      {/* Background Image (changeable) */}
       <Image
-        src="/mc.jpg"
+        src="/mc.jpg" // ← change background image here
         alt="Background"
         fill
         style={{ objectFit: "cover" }}
@@ -51,9 +51,26 @@ export default function Home() {
             {item}
           </a>
         ))}
+
+        {/* Login Button */}
+        <a
+          href="/login"
+          style={{
+            color: "#3c00ffff",
+            textDecoration: "none",
+            fontWeight: "700",
+            padding: "10px 18px",
+            borderRadius: "12px",
+            border: "2px solid #3c00ffff",
+            backdropFilter: "blur(5px)",
+            transition: "all 0.3s ease",
+          }}
+        >
+          Login
+        </a>
       </nav>
 
-      {/* pft box */}
+      {/* Profile Box */}
       <div
         style={{
           position: "absolute",
@@ -138,7 +155,7 @@ export default function Home() {
         </div>
       </div>
 
-      {/* (9 images) */}
+      {/* Gallery (9 images) */}
       <div
         style={{
           position: "absolute",
